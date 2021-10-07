@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Temperature Converter</string>
+    <string name="enterTemp">Enter temperature in Celsius</string>
+    <string name="result"></string>
+    <string name="calculate">Calculate</string>
+    <string name="error">Invalid Input: value must be between (including) -50 and 50.</string>
+    <string name="yourResult">Temperature in Fahrenheit:</string>
+
+</resources>
