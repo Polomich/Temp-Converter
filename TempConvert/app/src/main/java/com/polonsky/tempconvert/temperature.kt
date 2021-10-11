@@ -26,7 +26,7 @@ class Temperature(val tempCelsius: Double){
     show image corresponding to the temperature
      */
     public fun showImage(image: ImageView){
-        //for warmm weather
+        //for warm weather
         if(this.celsius in 19.0..24.0){
             image.setImageResource(R.drawable.niceweather)
         }
