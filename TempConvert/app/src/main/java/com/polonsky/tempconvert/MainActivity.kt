@@ -2,10 +2,7 @@ package com.polonsky.tempconvert
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.EditText
-import android.widget.TextView
-import android.widget.Button
-import android.widget.Toast
+import android.widget.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,6 +11,7 @@ class MainActivity : AppCompatActivity() {
 
         var tempEditText = findViewById<EditText>(R.id.temp)
         var resultTextView = findViewById<TextView>(R.id.result)
+        var weatherImageView = findViewById<ImageView>(R.id.weatherImage)
 
         val calculateBtn = findViewById<Button>(R.id.calculate)
         calculateBtn.setOnClickListener{
@@ -23,6 +21,7 @@ class MainActivity : AppCompatActivity() {
             }
             else{
                 resultTextView.text = temperature.calculate().toString()
+                temperature.showImage(weatherImageView)
             }
         }// end Listener
     }// end onCreate
