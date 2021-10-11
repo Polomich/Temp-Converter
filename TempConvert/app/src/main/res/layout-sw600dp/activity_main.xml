@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/mainContainer"
+        android:layout_width="554dp"
+        android:layout_height="875dp"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <LinearLayout
+            android:id="@+id/enterInfo"
+            android:layout_width="147dp"
+            android:layout_height="140dp"
+            android:orientation="vertical"
+            android:padding="3dp">
+
+            <TextView
+                android:id="@+id/enterTemp"
+                style="@style/orange"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:padding="5dp"
+                android:text="@string/enterTemp" />
+
+            <EditText
+                android:id="@+id/temp"
+                style="@style/pink"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:ems="10"
+                android:inputType="numberSigned|number|numberDecimal"
+                android:minHeight="48dp"
+                android:padding="10dp"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/calculate"
+            android:layout_width="118dp"
+            android:layout_height="58dp"
+            android:padding="5dp"
+            android:text="@string/calculate" />
+
+        <LinearLayout
+            android:layout_width="110dp"
+            android:layout_height="146dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/yourResult"
+                style="@style/orange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/yourResult" />
+
+            <TextView
+                android:id="@+id/result"
+                style="@style/orange"
+                android:layout_width="match_parent"
+                android:layout_height="87dp"
+                android:padding="5dp"
+                android:text="@string/result" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="174dp"
+            android:layout_height="178dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/weatherImage"
+                android:layout_width="132dp"
+                android:layout_height="161dp"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

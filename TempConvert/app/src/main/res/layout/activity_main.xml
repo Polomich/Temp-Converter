@@ -42,7 +42,7 @@
             android:text="@string/calculate" />
 
         <TextView
-            android:id="@+id/youResult"
+            android:id="@+id/yourResult"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="5dp"
