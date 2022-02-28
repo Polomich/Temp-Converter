@@ -5,7 +5,7 @@ Temperature Converter
 An Android app meant to convert temperature from Celsius to Fahrenheiht and display a picture matching the weather associated with the temperature. Displays an error message when the user enters the wrong type of input or an out-of-range input (<-50, >50).
 
 # Medium
-Kotlin, Android
+Kotlin for Android
 
 # Process and Intention
 
